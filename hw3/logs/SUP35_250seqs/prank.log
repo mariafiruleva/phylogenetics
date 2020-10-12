@@ -1,0 +1,16 @@
+
+-----------------
+ PRANK v.170427:
+-----------------
+
+Input for the analysis
+ - aligning sequences in 'data/SUP35_250seqs.fsa'
+ - using inferred alignment guide tree
+ - option '+F' is not used; it can be enabled with '+F'
+ - external tools available:
+    MAFFT for initial alignment
+
+Correcting (arbitrarily) for multifurcating nodes.
+Correcting (arbitrarily) for multifurcating nodes.
+
+Generating multiple alignment: iteration 1.

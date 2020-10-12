@@ -1,0 +1,4 @@
+files:
+  - SUP35_10seqs: data/SUP35_10seqs.fa
+  - SUP35_10seqs_aa: data/SUP35_10seqs_aa.fa
+  - SUP35_250seqs: data/SUP35_250seqs.fsa

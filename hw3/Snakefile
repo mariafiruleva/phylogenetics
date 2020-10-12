@@ -1,0 +1,22 @@
+from collections import ChainMap
+
+configfile: "config.yaml"
+
+input_data = dict(ChainMap(*config['files']))
+
+print(input_data)
+
+rule all:
+    input: expand("out/clustalw/{prefix}.aln", prefix=input_data.keys()),
+         expand("out/kalign/{prefix}.fa", prefix=input_data.keys()),
+         expand("out/mafft/{prefix}.fa", prefix=input_data.keys()),
+         expand("out/muscle/{prefix}.fa", prefix=input_data.keys()),
+         expand("out/prank/{prefix}.best.fas", prefix=input_data.keys())
+#         expand("out/t_coffee/{prefix}.aln", prefix=input_data.keys())
+
+include: "rules/clustalw.smk"
+include: "rules/kalign.smk"
+include: "rules/mafft.smk"
+include: "rules/muscle.smk"
+include: "rules/prank.smk"
+#include: "rules/t_coffee.smk"
