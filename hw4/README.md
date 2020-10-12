@@ -27,20 +27,6 @@ To select appropriate model for our data, we can use jmodeltest or ModelFinder. 
 
 1. Build an ML tree (500 bootstrap replicates) for the whole sequence using RAxML or IQ-Tree with GTRCAT model.
     
-    For this task, I used `RAxML-HPC BlackBox` tool on CIPRES server (https://www.phylo.org/portal2/home.action).
-    
-    Parameters:
-    
-    ![](out/ML/params.png)
-    
-    Output file: `out/ML/tree.txt`
-
-2. Info will appear soon..
-
-3. Root the tree obtained in 1, and “collapse” (cut-off) clades with bootstrap support < 70%.
-Display the resulting tree with bootstrap support (you can choose any way to draw it).
-Based on the tree, describe the relationship between the taxa S. cerevisiae, S. boulardii, and S. paradoxus.
-
     Firstly, I renamed fasta ids in `data/SUP35_aln.best.fas` file for properly conversion of fasta
     format to phylip format.
     
@@ -48,9 +34,21 @@ Based on the tree, describe the relationship between the taxa S. cerevisiae, S. 
     output file -- `data/SUP35_aln.best.phy`
     
     Finally, I analyze the data using http://www.atgc-montpellier.fr/phyml/ server.
+
+2. Info will appear soon..
+
+3. Root the tree obtained in 1, and “collapse” (cut-off) clades with bootstrap support < 70%.
+Display the resulting tree with bootstrap support (you can choose any way to draw it).
+Based on the tree, describe the relationship between the taxa S. cerevisiae, S. boulardii, and S. paradoxus.
     
-
-
-
+    Tool: https://itol.embl.de/
     
+    Tree after clades collapsing:
+    
+    ![](out/ML/itol_tree.png)
+    
+    *S. cerevisiae*, *S. boulardii*, and *S. paradoxus* are polyphyletic group
+    (all descendants included, but not the common ancestor)
+    
+    Also, there is polytomy relationships between *Scer_beer*, *Scer_74* and *Sbou_uniqu*.    
     
