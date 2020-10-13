@@ -62,5 +62,12 @@ The TIM1, TIM2, TIM3, TPM1uf, TPM2uf, TPM3uf and TrN substitution models were re
 
 (reference: [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3675023/))
 
-Since MrBayes has already been implemented with GTR model (see above), I use ML approach (bootstrap = 500) for this task.
-
+Since MrBayes has already been implemented with GTR model (see above), I use ML approach
+ (bootstrap = 500, model = GTR, [ATGC server](http://www.atgc-montpellier.fr/)) for this task.
+ 
+ All output files corresponding to ML phylogeny located in `out` folder, `sup35_aln_best_phyml` file prefixes.
+ 
+ Output topology (branches with support < 350 were collapsed):
+ ![](out/ml_tree_gtr.png)
+ 
+ 
