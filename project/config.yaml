@@ -1,0 +1,6 @@
+files:
+  - COI: data/COI.fa
+  - NADH: data/NADH.fa
+outgroups:
+  - COI: KU985936.1_Dicamptodon_ensatus 
+  - NADH: KC870882.1_Dicamptodon_copei 

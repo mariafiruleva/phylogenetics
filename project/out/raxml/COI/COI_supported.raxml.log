@@ -1,0 +1,35 @@
+
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD Opteron(TM) Processor 6272, 32 cores, 125 GB RAM
+
+RAxML-NG was called at 19-Oct-2020 22:14:39 as follows:
+
+raxml-ng --support --tree raxml/COI/COI.raxml.bestTree --bs-trees raxml/COI/COI.raxml.bootstraps --prefix raxml/COI/COI_supported --seed 42 --outgroup KU985936.1_Dicamptodon_ensatus
+
+Analysis options:
+  run mode: Compute bipartition support (Felsenstein Bootstrap)
+  start tree(s): user
+  outgroup taxa: KU985936.1_Dicamptodon_ensatus
+  random seed: 42
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+Reading reference tree from file: raxml/COI/COI.raxml.bestTree
+Reference tree size: 10
+
+Reading bootstrap trees from file: raxml/COI/COI.raxml.bootstraps
+Loaded 100 trees with 10 taxa.
+
+Best ML tree with Felsenstein bootstrap (FBP) support values saved to: /mnt/tank/scratch/mfiruleva/phylo/raxml/COI/COI_supported.raxml.support
+
+Execution log saved to: /mnt/tank/scratch/mfiruleva/phylo/raxml/COI/COI_supported.raxml.log
+
+Analysis started: 19-Oct-2020 22:14:39 / finished: 19-Oct-2020 22:14:39
+
+Elapsed time: 0.034 seconds
+
