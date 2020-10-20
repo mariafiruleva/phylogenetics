@@ -1,0 +1,34 @@
+EXTRA :2
+
+Kalign version 2.04, Copyright (C) 2004, 2005, 2006 Timo Lassmann
+
+        Kalign is free software. You can redistribute it and/or modify
+        it under the terms of the GNU General Public License as
+        published by the Free Software Foundation.
+
+reading from STDIN: found no sequences.
+
+reading from project/NADH.fa: found 10 sequences
+reading from out/kalign/NADH.fa: found no sequences.
+-> output file, in fasta format
+
+Aligning 10 RNA/DNA sequences with these parameters:
+        217.00000000	gap open penalty
+        39.40000153	gap extension
+        292.60000610	terminal gap penalty
+        283.00000000	bonus
+Alignment will be written to file:'out/kalign/NADH.fa'.
+
+Distance Calculation:
+       2 percent done       4 percent done       7 percent done       9 percent done      11 percent done      13 percent done      16 percent done      18 percent done      20 percent done      22 percent done      24 percent done      27 percent done      29 percent done      31 percent done      33 percent done      36 percent done      38 percent done      40 percent done      42 percent done      44 percent done      47 percent done      49 percent done      51 percent done      53 percent done      56 percent done      58 percent done      60 percent done      62 percent done      64 percent done      67 percent done      69 percent done      71 percent done      73 percent done      76 percent done      78 percent done      80 percent done      82 percent done      84 percent done      87 percent done      89 percent done      91 percent done      93 percent done      96 percent done      98 percent done     100 percent done
+Alignment:
+       0 percent doneSaving mem...
+      10 percent doneSaving mem...
+      20 percent doneSaving mem...
+      30 percent doneSaving mem...
+      40 percent doneSaving mem...
+      50 percent doneSaving mem...
+      60 percent doneSaving mem...
+      70 percent doneSaving mem...
+      80 percent doneSaving mem...
+     100 percent done

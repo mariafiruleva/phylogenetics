@@ -1,0 +1,15 @@
+from collections import ChainMap
+
+configfile: "config.yaml"
+
+input_data = dict(ChainMap(*config['files']))
+outgroups = dict(ChainMap(*config['outgroups']))
+
+print(input_data)
+
+rule all:
+    input: expand("out/muscle/{prefix}.fa", prefix=input_data.keys()),
+           expand("raxml/{prefix}/{prefix}_supported.raxml.support", prefix=input_data.keys())
+
+include: "rules/muscle.smk"
+include: "rules/raxml.smk"
